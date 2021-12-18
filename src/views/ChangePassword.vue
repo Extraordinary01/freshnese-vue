@@ -115,7 +115,7 @@
 							bgColor: "#6a983c",
 							textColor: "#fff",
 						});
-						router.push("/");
+						router.push({ name: "home" });
 					}
 				}
 			};

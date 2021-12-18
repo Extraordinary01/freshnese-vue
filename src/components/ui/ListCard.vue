@@ -4,7 +4,13 @@
 			<img :src="product.img" alt="product image" />
 		</div>
 		<div class="list-card__item list-card__info">
-			<h5 class="list-card__title title">{{ product.name }}</h5>
+			<router-link
+				:to="{
+					name: 'product-detail',
+					params: { category_url: product.category_url, url: product.url },
+				}"
+				><h5 class="list-card__title title">{{ product.name }}</h5></router-link
+			>
 			<p class="list-card__description">{{ product.desc }}</p>
 			<star-rating
 				:star="

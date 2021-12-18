@@ -675,11 +675,17 @@
 			&__btns {
 				flex-wrap: wrap;
 				justify-content: center;
+				margin-top: 10px;
 			}
 			&__btn {
-				margin-right: 0;
-				margin-bottom: 10px;
-				margin-top: 10px;
+				margin-right: 10px;
+			}
+		}
+	}
+	@media (max-width: 390px) {
+		.product-detail {
+			&__btn {
+				margin: 0 0 10px 0;
 			}
 		}
 	}

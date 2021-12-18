@@ -30,7 +30,7 @@
 					<button class="green-btn" @click="apply()">Apply</button>
 				</div>
 				<div class="card__btn price-filter__btn price-filter__btn_r">
-					<button class="btn" @click="reset()">Reset</button>
+					<button class="green-btn btn" @click="reset()">Reset</button>
 				</div>
 			</div>
 		</div>
@@ -271,7 +271,7 @@
 			&__item {
 				width: 80%;
 				margin: 20px auto;
-				&:first-child {
+				&:last-child {
 					width: 100%;
 				}
 			}
