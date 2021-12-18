@@ -9,7 +9,7 @@
 </template>
 
 <script>
-	import ListCard from "../ui/ListCard.vue";
+	import ListCard from "@/components/ui/ListCard.vue";
 	export default {
 		components: {
 			ListCard,

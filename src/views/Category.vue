@@ -50,16 +50,16 @@
 </template>
 
 <script>
-	import BreadCrumbs from "../components/ui/BreadCrumbs.vue";
-	import CategoryTitle from "../components/ui/CategoryTitle.vue";
-	import SelectedFiltres from "../components/categories/SelectedFiltres.vue";
-	import CategorySums from "../components/categories/CategorySums.vue";
-	import BrandsFilter from "../components/categories/BrandsFilter.vue";
-	import RatingFilter from "../components/categories/RatingFilter.vue";
-	import PriceFilter from "../components/categories/PriceFilter.vue";
-	import ListView from "../components/categories/ListView.vue";
-	import LoadOther from "../components/LoadOther.vue";
-	import ProductsGrid from "../components/ui/ProductsGrid.vue";
+	import BreadCrumbs from "@/components/ui/BreadCrumbs.vue";
+	import CategoryTitle from "@/components/ui/CategoryTitle.vue";
+	import SelectedFiltres from "@/components/categories/SelectedFiltres.vue";
+	import CategorySums from "@/components/categories/CategorySums.vue";
+	import BrandsFilter from "@/components/categories/BrandsFilter.vue";
+	import RatingFilter from "@/components/categories/RatingFilter.vue";
+	import PriceFilter from "@/components/categories/PriceFilter.vue";
+	import ListView from "@/components/categories/ListView.vue";
+	import LoadOther from "@/components/LoadOther.vue";
+	import ProductsGrid from "@/components/ui/ProductsGrid.vue";
 	import { useStore } from "vuex";
 	import { computed, ref, watch } from "vue";
 	import { useRoute } from "vue-router";

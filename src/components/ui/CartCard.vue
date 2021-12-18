@@ -9,12 +9,12 @@
 					v-if="!user.wishlist.filter((el) => el.id === item.product.id).length"
 					@click="addToWishlist()"
 				>
-					<img src="../../assets/icons/heart_sm.svg" alt="" />
+					<img src="@/assets/icons/heart_sm.svg" alt="" />
 					Wishlist
 				</button>
 				<button v-else @click="removeFromWishlist()">
 					<img
-						src="../../assets/icons/heart_filled.svg"
+						src="@/assets/icons/heart_filled.svg"
 						width="12"
 						height="12"
 						alt="remove"
@@ -22,11 +22,11 @@
 					Remove
 				</button>
 				<button>
-					<img src="../../assets/icons/compare_sm.svg" alt="" />
+					<img src="@/assets/icons/compare_sm.svg" alt="" />
 					Compare
 				</button>
 				<button @click="remove(index)">
-					<img src="../../assets/icons/close_sm.svg" alt="" />
+					<img src="@/assets/icons/close_sm.svg" alt="" />
 					Remove
 				</button>
 			</div>
@@ -78,8 +78,8 @@
 </template>
 
 <script>
-	import useCart from "../../composables/useCart";
-	import useWishList from "../../composables/useWishList";
+	import useCart from "@/composables/useCart";
+	import useWishList from "@/composables/useWishList";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
 	export default {
@@ -106,5 +106,3 @@
 		},
 	};
 </script>
-
-<style></style>

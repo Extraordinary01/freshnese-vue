@@ -130,7 +130,7 @@
 						</div>
 						<div class="product-detail__add">
 							<button class="green-btn" @click="addToCart()">
-								<span><img src="../assets/icons/add.svg" /></span> Add to cart
+								<span><img src="@/assets/icons/add.svg" /></span> Add to cart
 							</button>
 						</div>
 					</div>
@@ -148,7 +148,7 @@
 						wishlist
 					</button>
 					<button class="wishlist__btn">
-						<span><img src="../assets/icons/compare.svg" alt="" /></span>
+						<span><img src="@/assets/icons/compare.svg" alt="" /></span>
 						Compare
 					</button>
 				</div>
@@ -252,16 +252,16 @@
 </template>
 
 <script>
-	import BreadCrumbs from "../components/ui/BreadCrumbs.vue";
-	import StarRating from "../components/ui/StarRating.vue";
-	import Headline from "../components/ui/Headline.vue";
-	import ReviewCard from "../components/ui/ReviewCard.vue";
+	import BreadCrumbs from "@/components/ui/BreadCrumbs.vue";
+	import StarRating from "@/components/ui/StarRating.vue";
+	import Headline from "@/components/ui/Headline.vue";
+	import ReviewCard from "@/components/ui/ReviewCard.vue";
 	import { computed, ref } from "vue";
 	import { useStore } from "vuex";
 	import { useRoute } from "vue-router";
-	import useAddCart from "../composables/useAddCart";
-	import useWishList from "../composables/useWishList";
-	import api from "../api/api";
+	import useAddCart from "@/composables/useAddCart";
+	import useWishList from "@/composables/useWishList";
+	import api from "@/api/api";
 	export default {
 		components: {
 			BreadCrumbs,
@@ -576,13 +576,13 @@
 		}
 		&__heart {
 			display: inline-block;
-			background-image: url("../assets/icons/heart.svg");
+			background-image: url("@/assets/icons/heart.svg");
 			width: 16px;
 			height: 16px;
 			filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
 				brightness(104%) contrast(97%);
 			&_f {
-				background-image: url("../assets/icons/heart_filled.svg");
+				background-image: url("@/assets/icons/heart_filled.svg");
 			}
 		}
 	}

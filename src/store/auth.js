@@ -1,6 +1,6 @@
-import auth from "../api/auth";
-import api from "../api/api";
-import router from "../router";
+import auth from "@/api/auth";
+import api from "@/api/api";
+import router from "@/router";
 import {
 	LOGIN_BEGIN,
 	LOGIN_FAILURE,
@@ -9,7 +9,7 @@ import {
 	LOGOUT,
 	REMOVE_TOKEN,
 	SET_TOKEN,
-} from "./types";
+} from "@/store/types";
 
 const TOKEN_STORAGE_KEY = "TOKEN_STORAGE_KEY";
 const isProd = import.meta.env.MODE === "production";

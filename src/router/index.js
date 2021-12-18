@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Homepage from "../views/Homepage.vue";
-import store from "../store";
+import Homepage from "@/views/Homepage.vue";
+import store from "@/store";
 
 const requireUnauthenticated = (to, from, next) => {
 	store.dispatch("auth/initialize").then(() => {

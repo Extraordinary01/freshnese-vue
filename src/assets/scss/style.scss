@@ -3,8 +3,8 @@
 $fontfamily: "Open Sans";
 $minwidth: 320px;
 
-@import "mixins.scss";
-@import "null.scss";
+@import "@/assets/scss/mixins.scss";
+@import "@/assets/scss/null.scss";
 
 .container {
 	width: 100%;
