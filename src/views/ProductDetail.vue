@@ -121,7 +121,14 @@
 						<div class="product-detail__btn product-detail__stock">
 							<div class="product-detail__count">
 								<div class="product-detail__input">
-									<input name="stock" v-model.number="stock" />
+									<input
+										name="stock"
+										type="number"
+										step="1"
+										min="1"
+										pattern="\d+"
+										v-model.number="stock"
+									/>
 								</div>
 								<select name="type">
 									<option value="Pcs">Pcs</option>

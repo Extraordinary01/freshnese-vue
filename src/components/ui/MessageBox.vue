@@ -47,6 +47,7 @@
 		border-radius: 12px;
 		&__text {
 			margin: auto 0;
+			width: 94%;
 			color: var(--text-color);
 		}
 		&__icon {

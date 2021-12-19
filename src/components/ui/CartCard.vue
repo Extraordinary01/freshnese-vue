@@ -58,6 +58,9 @@
 							<input
 								name="stock"
 								type="number"
+								step="1"
+								min="1"
+								pattern="\d+"
 								v-model.lazy.number="item.quantity"
 							/>
 						</div>
