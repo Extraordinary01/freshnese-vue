@@ -168,11 +168,13 @@
 				const brand = computed(() => store.state.filter.brand);
 				const price = computed(() => store.state.filter.price);
 				if (rate.value != 0) {
+					store.commit("filter/addAppliedFilters", "Rating");
 					products.value = products.value.filter((el) => {
 						return el.rating_avg >= parseFloat(rate.value);
 					});
 				}
 				if (brand.value !== "") {
+					store.commit("filter/addAppliedFilters", "Brand");
 					products.value = products.value.filter((el) => {
 						return el.brand === brand.value;
 					});

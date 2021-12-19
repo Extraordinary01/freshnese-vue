@@ -7,7 +7,6 @@ export default function useAddCart(product, quantity = 1) {
 		product: product,
 		quantity: quantity > 0 ? quantity : 1,
 	});
-	console.log(item);
 	const addToCart = () => {
 		store.commit("estore/addToCart", item.value);
 	};
